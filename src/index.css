@@ -1,3 +1,82 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.he_border-bg {
+    /* background: url('../public/assets/svg/firstMessage.svg') center / cover; */
+    /* border-image: url('../public/assets/svg/firstMessage.svg') 30 / 19px round; */
+    /* border-image-slice: 15; */
+
+    border-image-source: url('../public/assets/svg/firstMessage.svg');
+    border-image-slice: 21;
+    border-image-width: 19px;
+    border-image-repeat: round;
+}
+
+.i_border-bg {
+    border-image-source: url('../public/assets/svg/firstMyMessage.svg');
+    border-image-slice: 21;
+    border-image-width: 19px;
+    border-image-repeat: round;
+}
+
+.no_scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.animate_chat-profil {
+    animation: play 0.2s 1 linear;
+}
+
+@keyframes play {
+    0% {
+        transform: translate(100%);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.fuck::before {
+    content: url(../public/assets/svg/ll.svg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(85%) translateY(9px);
+}
+
+.fuck::after {
+    content: url(/public/assets/svg/ll.svg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-85%) translateY(9px) scaleX(-1);
+}
+
+.ck-rounded-corners .ck.ck-toolbar,
+.ck.ck-toolbar.ck-rounded-corners {
+    border-radius: 10px !important;
+}
+
+
+.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content {
+    border-radius: 10px !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable,
+.ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners {
+    border-radius: 10px !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.ck {
+    height: 200px;
+}
+
+.ck::-webkit-scrollbar {
+    display: none;
+}
